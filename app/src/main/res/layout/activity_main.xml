@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Avatar -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_user"
+            android:background="@drawable/bg_circle"
+            android:scaleType="centerInside"
+            android:padding="24dp" />
+
+        <!-- Name input -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="24dp" />
+
+        <!-- Palindrome input -->
+        <EditText
+            android:id="@+id/etSentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Palindrome"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <!-- Check button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECK"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white" />
+
+        <!-- Next button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
