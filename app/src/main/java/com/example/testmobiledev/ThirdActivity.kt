@@ -2,6 +2,7 @@ package com.example.testmobiledev
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,6 +24,10 @@ class ThirdActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
+        val ivBack = findViewById<ImageView>(R.id.ivBack)
+        ivBack.setOnClickListener {
+            finish()
+        }
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewUsers)
         val swipeRefresh = findViewById<SwipeRefreshLayout>(R.id.swipeRefreshLayout)
